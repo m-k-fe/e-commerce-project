@@ -1,0 +1,197 @@
+@media screen and (min-width:992px) and (max-width:1199px){
+    .container{
+        width: 95%;
+        margin: auto;
+    }
+    .header-general{
+        margin-bottom: 30px;
+    }
+    .header-general h2{
+        font-weight: 600;
+        font-size: 1.7rem;
+        letter-spacing: .1rem;
+    }
+    .line{
+        height: 3px;
+        margin: 5px auto;
+    }
+    .header-content > ul li .dropdown-user#user-info{
+        left: -81px;
+    }
+    .header-content > ul li .dropdown-user#links.no-login{
+        width: 170px;
+        left: -67px;
+    }
+    .home-content{
+        width: 60%;
+        top: 40%;
+    }
+    .home-content span{
+        font-size: 14px;
+    }
+    .home-content h2{
+        margin: 15px 0 30px;
+        font-size: 4rem;
+        line-height: 4.3rem;
+    }
+    .home-content button{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    /* END HOME */
+    .section-item p{
+        font-weight: bold;
+        font-size: 16px;
+        min-width: 140px;
+        display: inline-block;
+        letter-spacing: 0.5;
+        padding: 13px;
+    }
+    /* START PRODUCTS */
+    .products-content{
+        grid-template-columns: repeat(5,1fr);
+    }
+    .product-item,
+    .product-item:nth-child(4n){
+        border-right: 1px solid #eee;
+    }
+    .product-item:nth-child(5n),
+    .product-item:last-child{
+        border-right: 0;
+    }
+    .product-item h6{
+        font-size: .7rem;
+    }
+    .product-item img{
+        height: 150px;
+        margin-top: 20px;
+    }
+    .product-item .new-price,
+    .product-item .old-price{
+        font-size: .9rem;
+    }
+    .no-products{
+        font-size: 14px;
+        color: #1e1e27;
+    }
+    .product-item button{
+        font-size: .8rem;
+        font-weight: 700;
+    }
+    /* END PRODUCTS */
+     /* START DEAL */
+     .deal{
+        margin: 0 0 30px;
+    }
+    .deal-parent{
+        display: flex;
+        position: relative;
+    }
+    .deal-parent img{
+        width: 50%;
+    }
+    .deal-content .header-general h2{
+        font-size: 1.9rem;
+    }
+    .deal-content ul{
+        margin-bottom: 40px;
+    }
+    .deal-content ul li{
+        width: 85px;
+        height: 85px;
+        margin-right: 20px;
+    }
+    .deal-content ul li div h3{
+        font-size: 1.5rem;
+    }
+    .deal-content ul li div span{
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: -5px;
+    }
+    /* END DEAL */
+    /* START SELLERS */
+    .sellers-item{
+        min-width: 25%;
+        border-right: 0;
+    }
+    .sellers-item img{
+        width: 100%;
+        height: 235px;
+    }
+    .sellers-item h6{
+        font-size: .8rem;
+    }
+    .sellers-item.product-item{
+        border-right: 0;
+    }
+    .offres{
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 15px;
+        margin-top: 50px;
+    }
+    /* END SELLERS */
+    .blog-item{
+        height: 270px;
+    }
+    .blog-item img{
+        height: 100%;
+    }
+    .blog-item .blog-item-desc{
+        padding: 13% 3%;    
+    }
+    .blog-item .blog-item-desc h4{
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    /* END BLOG */
+    /* START NEWSLETTER */
+    .newsletter-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0 0;
+    }
+    .newsletter-desc{
+        margin-bottom: 15px;
+    }
+    .newsletter-desc h4{
+        font-size: 1.4rem;
+    }
+    .newsletter-desc p{
+        font-weight: 500;
+        font-size: 13px;
+    }
+    .newsletter-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .newsletter-form input[type=submit]{
+        width: 150px; 
+        font-weight: 500;
+    }
+    /* END NEWSLETTER */
+    .products-womens-settings .product-item img{
+        height: 180px;
+        width: 85%;
+    }
+    /* START FORM */
+    .section-form{
+        width: 65%;
+        padding: 0;
+    }
+    .section-form input{
+        padding: 15px;
+    }
+    .section-form input[type=submit]{
+        font-size: 1rem;
+        padding: 15px;
+    }
+    .breadcump ul{
+        padding: 12px 15px;
+    }
+    .contact #map{
+        height: 400px;
+    }
+}

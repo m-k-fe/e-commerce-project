@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mq-mobile.css">
+    <link rel="stylesheet" href="css/mq-tablet.css">
+    <link rel="stylesheet" href="css/mq-small-lap.css">
+    <link rel="stylesheet" href="css/mq-laptop.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+    <title>Ecommerce Contact Page</title>
+</head>
+<body>
+    <!-- START HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="bars">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <a href="index.html" class="brand">Colo<span>Shop</span></a>
+                <nav>
+                    <span class="close">
+                        <i class="fa fa-close"></i>
+                    </span>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Promotion</a></li>
+                        <li class="drop-down">
+                            <a href="#">Pages</a>
+                            <ul class="drop-down-menu">
+                                <li><a href="cart.html">Shopping Cart</a></li>
+                                <li><a href="favorite.html">My favorite</a></li>
+                                <li><a href="my-views.html">My Views</a></li>
+                                <li><a href="my-products.html">My Products</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <ul>
+                    <li class="search-icon">
+                        <a href="#"><i class="fa fa-search"></i></a>
+                        <div class="search-div">
+                            <input type="search" name="" id="search-input">
+                            <button>Search</button>
+                        </div>
+                    </li>
+                    <li class="user-icon">
+                        <a href="#"><i class="fa fa-user"></i></a>
+                        <ul class="dropdown-user no-login" id="links">
+                            <li>
+                                <a href="login.html">
+                                    <i class="account fa fa-sign-in"></i>
+                                    SIGN IN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="register.html">
+                                    <i class="account fa fa-user-plus"></i>
+                                    SIGN UP
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="dropdown-user" id="user-info">
+                            <li>
+                                <a href="profile.html" id="user">
+                                    <i class="account fa fa-user"></i>
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="create-product.html" id="user">
+                                    <i class="account fa fa-plus-square"></i>
+                                    <span>POST AD</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" id="log-out">
+                                    <i class="account fa fa-sign-out"></i>
+                                    <span>LOG OUT</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="shopping-cart-icon">
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                        <span class="badge">0</span>
+                        <div class="cart-products">
+                            <p>Shopping Cart Is Empty</p>
+                            <div class="cart-products-div-dom"></div>
+                            <button>View All Products</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+    <!-- START BREADCUMP -->
+    <div class="breadcump">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" class="active">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- START CONTACT -->
+    <section class="contact">
+        <div class="container">
+            <div id="map">
+                <div class="layer"></div>
+            </div>
+            <div class="contact-parent">
+                <div class="contact-item">
+                    <h3>Contact Us</h3>
+                    <p>
+                        There are many ways to contact us. You may drop us a line, 
+                        give us a call or send an email, choose what suits you the most.
+                    </p>
+                    <div>
+                        <p>(800) 686-6688</p>
+                        <p>info.deercreative@gmail.com</p>
+                    </div>
+                    <div>
+                        <p>mm</p>
+                    </div>
+                    <div>
+                        <p>
+                            Open hours: 8.00-18.00 Mon-Fri<br>
+                            Sunday: Closed
+                        </p>
+                    </div>
+                    <h3 class="folow">Follow Us</h3>
+                    <ul>
+                        <li class="facebook">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="twitter">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="google">
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li class="instagram">
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-item">
+                    <h3>Get In Touch With Us!</h3>
+                    <p>Fill out the form below to recieve a free and confidential.</p>
+                    <form action="">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Website">
+                        <textarea name="" id="" placeholder="Message"></textarea>
+                        <input type="submit" value="SEND MESSAGE">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CONTACT -->
+    <!-- START OFFERS -->
+    <div class="container">
+        <div class="offres">
+            <div class="offre-item">
+                <i class="fa fa-truck"></i>
+                <div>
+                    <h5>FREE SHIPPING</h5>
+                    <p>Suffered Alteration in Some Form</p>
+                </div>
+            </div>
+            <div class="offre-item">
+                <i class="fa fa-money"></i>
+                <div>
+                    <h5>CACH ON DELIVERY</h5>
+                    <p>The Internet Tend To Repeat</p>
+                </div>
+            </div>
+            <div class="offre-item">
+                <i class="fa fa-undo"></i>
+                <div>
+                    <h5>45 DAYS RETURN</h5>
+                    <p>Making it Look Like Readable</p>
+                </div>
+            </div>
+            <div class="offre-item">
+                <i class="fa fa-clock-o"></i>
+                <div>
+                    <h5>OPENING ALL WEEK</h5>
+                    <p>8AM - 09PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OFFERS -->
+    <!-- START NEWSLETTER -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-desc">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter and get 20% off your first purchase</p>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" id="" placeholder="Your email">
+                    <input type="submit" value="SUBSCRIBE">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END NEWSLETTER -->
+    <!-- START FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-ul">
+                <ul class="links">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                <ul class="icons">
+                    <li><i class="fa fa-facebook"></i></li>
+                    <li><i class="fa fa-twitter"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                    <li><i class="fa fa-skype"></i></li>
+                    <li><i class="fa fa-pinterest"></i></li>
+                </ul>
+            </div>
+            <p>© 2021 All Rights Reserverd. Made with <i class="fa fa-heart-o"></i> by <span>Mohammed Karim</span></p>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    <script src="js/user.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/products-in-cart.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js'></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
